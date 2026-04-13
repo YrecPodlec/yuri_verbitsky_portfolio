@@ -1,0 +1,75 @@
+@use "@styles/colors" as colors;
+@use "@styles/mixins" as mixins;
+.header{
+  background-color: colors.$win-title-active;
+  padding: 0 2rem;
+}
+.logoBox{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-right: 1px solid white;
+  padding: 0 1rem;
+  gap: .5rem;
+  img{
+    width: 2rem;
+  }
+}
+.navPanel{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+.btnList{
+  padding: .5rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  nav{
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+
+//BURGER
+.burger {
+  cursor: pointer;
+}
+.burgerCheckbox {
+  display: none;
+}
+.burgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  padding: .5rem;
+}
+
+.burgerIcon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition: all 0.25s ease;
+}
+.burgerIcon span:nth-child(3) {
+  background-color: rgba(255, 250, 250, 0);
+  height: .75rem;
+}
+
+.burgerCheckbox:checked + .burgerIcon span:nth-child(1) {
+  transform: rotate(45deg) translate(11px, 11px);
+}
+.burgerCheckbox:checked + .burgerIcon span:nth-child(2) {
+
+  transform: rotate(-45deg);
+}
+.burgerCheckbox:checked + .burgerIcon span:nth-child(3) {
+  opacity: 0;
+  height: 0rem;
+}

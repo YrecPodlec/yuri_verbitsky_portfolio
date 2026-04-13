@@ -1,1 +1,18 @@
-
+*{
+    margin:0;
+    padding:0;
+}
+button, p, div{
+    margin:0;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+}
+button{
+    padding: .5rem;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    color: black;
+}
