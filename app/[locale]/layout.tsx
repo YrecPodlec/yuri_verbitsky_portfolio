@@ -6,6 +6,7 @@ import { getMessages } from "next-intl/server";
 import React from "react";
 import "98.css";
 import '../globals.css'
+import Navbar from "@/app/[locale]/widgets/Navbar/Navbar";
 
 type Props = {
     children: React.ReactNode;
@@ -25,6 +26,7 @@ export default async function RootLayout({ children, params }: Props) {
         <html lang={locale}>
         <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+            <Navbar />
             {children}
         </NextIntlClientProvider>
         </body>
