@@ -1,3 +1,4 @@
+@use "@styles/colors" as colors;
 .overlay {
   position: fixed;
   inset: 0;
@@ -14,12 +15,33 @@
 }
 
 .modal {
-  background: #c0c0c0;
-  padding: 1rem;
-  border: 2px solid #000;
-  min-width: 300px;
   scale: 0.4;
+  width: 100%;
+  height: 95%;
+  margin: .5em;
+  @media(min-width: 1300px){
+    margin: 6em;
+    height: 85%;
+  }
+  @media(min-width: 1024px){
+    margin: 3em;
+    height: 90%;
+  }
 }
 .modal.open{
   scale: 1;
+}
+
+.modalBar{
+  display: flex;
+  background-color: colors.$win-blue;
+  justify-content: space-between;
+  align-items: center;
+  padding: .25rem;
+}
+
+.closeBtn {
+  min-width: .5rem!important;
+  aspect-ratio: 1 / 1;
+  font-weight: bold;
 }

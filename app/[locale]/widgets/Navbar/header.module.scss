@@ -1,7 +1,7 @@
 @use "@styles/colors" as colors;
 @use "@styles/mixins" as mixins;
 .header{
-  background-color: colors.$win-title-active;
+  background-color: colors.$win-blue;
   padding: 0 .5rem;
 }
 .navPanel{
