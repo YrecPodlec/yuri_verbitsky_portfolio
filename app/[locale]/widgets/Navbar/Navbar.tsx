@@ -1,11 +1,14 @@
 import React from 'react';
-import Navigation from "@/app/[locale]/features/navigation/navigation";
 import styles from "./header.module.scss";
 import Link from "next/link";
-import Language from "@/app/[locale]/shared/ui/LanguageModal/Language";
-import ModalWindow from "@/app/[locale]/features/modal/modalWindow";
-import ChangeLang from "@/app/[locale]/features/ChangeLang/ChangeLang";
-import {Model} from "@/app/[locale]/shared"
+
+import {Navigation} from "@features";
+import {ModalWindow} from "@features";
+import {ChangeLang} from "@features";
+
+import {Language} from "@shared/ui";
+import {Model} from "@shared"
+
 const Navbar = () => {
     return (
         <header className={styles.header}>

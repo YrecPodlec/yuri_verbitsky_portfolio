@@ -16,5 +16,4 @@ export const LOCALES = {
         flag: 'CN',
     },
 } as const;
-
 export type Locale = keyof typeof LOCALES;

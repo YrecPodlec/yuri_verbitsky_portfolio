@@ -6,7 +6,7 @@ import { getMessages } from "next-intl/server";
 import React from "react";
 import "98.css";
 import '../globals.css'
-import Navbar from "@/app/[locale]/widgets/Navbar/Navbar";
+import {Navbar} from "@widgets";
 
 type Props = {
     children: React.ReactNode;

@@ -1,10 +1,9 @@
-import {useTranslations} from "next-intl";
+import {Hero} from "@widgets";
 
 export default function Home() {
-    const t = useTranslations('HomePage')
   return (
       <main>
-          <p>{t('title')}</p>
+          <Hero/>
       </main>
   );
 }

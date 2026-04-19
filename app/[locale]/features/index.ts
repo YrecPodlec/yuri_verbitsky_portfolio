@@ -1,3 +1,3 @@
-export * from './navigation/navigation'
-export * from './modal/modalWindow';
-export * from './ChangeLang/ChangeLang';
+export {default as Navigation} from './navigation/navigation'
+export {default as ModalWindow} from './modal/modalWindow';
+export {default as ChangeLang} from './ChangeLang/ChangeLang';

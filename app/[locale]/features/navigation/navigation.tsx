@@ -1,6 +1,6 @@
 import React from 'react';
-import Button98 from "@/app/[locale]/shared/ui/button/Button98";
 import Link from "next/link";
+import { Button98 } from "@shared/ui";
 interface Item {
     name: string;
     path: string

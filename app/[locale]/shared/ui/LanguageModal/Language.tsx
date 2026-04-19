@@ -1,14 +1,13 @@
 "use client"
 import React from 'react';
 import {useLocale} from "use-intl";
-import {LOCALES} from "@/app/[locale]/shared/i18n/locales";
+import {LOCALES, Locale} from "@shared/i18n";
 import Image from "next/image";
 import styles from './language.module.scss'
 const Language = () => {
     const locale = useLocale();
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    const flag = LOCALES[locale];
+    const safeLocale = (locale in LOCALES ? locale : "en") as Locale;
+    const flag = LOCALES[safeLocale];
     return (
         <div style={{cursor: 'pointer'}}>
             <button className={`${styles.language}`}>

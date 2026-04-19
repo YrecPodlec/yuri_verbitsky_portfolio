@@ -6,13 +6,13 @@
 }
 main{
     color: white;
-    background-color: #0f0017;
+    background-color: #08000c;
     background-image:
             linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
 
     background-size: 20px 20px;
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 }
 button, p, div{
     margin:0;

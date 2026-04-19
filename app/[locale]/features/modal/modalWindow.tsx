@@ -1,6 +1,6 @@
 "use client"
 import React, {ReactNode} from 'react';
-import ModalWindowSkeleton from "@/app/[locale]/features/modal/modalWindowSkeleton";
+import ModalWindowSkeleton from "./modalWindowSkeleton";
 interface Props {
     children: ReactNode;
     button: ReactNode;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {i18n} from "@/app/[locale]/shared";
+import {i18n} from "@shared";
 import Link from "next/link";
 import styles from './languageChange.module.scss'
 import Image from "next/image";

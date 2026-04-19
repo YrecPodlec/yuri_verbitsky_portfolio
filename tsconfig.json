@@ -20,7 +20,11 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@styles/*": ["app/[locale]/styles/*"]
+      "@styles/*": ["app/[locale]/styles/*"],
+      "@shared/*": ["app/[locale]/shared/*"],
+      "@shared": ["app/[locale]/shared/index"],
+      "@widgets": ["app/[locale]/widgets/index"],
+      "@features": ["app/[locale]/features/index"],
     }
   },
   "include": [
